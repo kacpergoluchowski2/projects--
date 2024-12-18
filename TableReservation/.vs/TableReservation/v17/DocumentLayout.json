@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ucze\u0144\\Documents\\kacperus\\TableReservation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B908541C-01A7-4151-A5CE-F3CC5FF9F2FB}|Quiz\\Quiz.csproj|c:\\users\\ucze\u0144\\documents\\kacperus\\tablereservation\\quiz\\vievmodels\\quizvievmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B908541C-01A7-4151-A5CE-F3CC5FF9F2FB}|Quiz\\Quiz.csproj|solutionrelative:quiz\\vievmodels\\quizvievmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B908541C-01A7-4151-A5CE-F3CC5FF9F2FB}|Quiz\\Quiz.csproj|c:\\users\\ucze\u0144\\documents\\kacperus\\tablereservation\\quiz\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B908541C-01A7-4151-A5CE-F3CC5FF9F2FB}|Quiz\\Quiz.csproj|solutionrelative:quiz\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuizVievModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ucze\u0144\\Documents\\kacperus\\TableReservation\\Quiz\\VievModels\\QuizVievModel.cs",
+              "RelativeDocumentMoniker": "Quiz\\VievModels\\QuizVievModel.cs",
+              "ToolTip": "C:\\Users\\Ucze\u0144\\Documents\\kacperus\\TableReservation\\Quiz\\VievModels\\QuizVievModel.cs",
+              "RelativeToolTip": "Quiz\\VievModels\\QuizVievModel.cs",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAjwK4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T09:57:52.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Ucze\u0144\\Documents\\kacperus\\TableReservation\\Quiz\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Quiz\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Ucze\u0144\\Documents\\kacperus\\TableReservation\\Quiz\\MainPage.xaml",
+              "RelativeToolTip": "Quiz\\MainPage.xaml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-18T08:21:19.464Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

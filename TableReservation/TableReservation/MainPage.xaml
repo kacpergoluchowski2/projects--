@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TableReservation.MainPage"
+             xmlns:local="clr-namespace:TableReservation.VievModels">
+    <ContentPage.BindingContext>
+        <local:TableReservationVievModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout Orientation="Vertical"
+                 HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="Start">
+        <StackLayout Orientation="Horizontal">
+            <Button WidthRequest="100"
+                HeightRequest="100"
+                Background="LightGray"
+                Margin="2"
+                x:Name="t1"
+                Command="{Binding ChooseTableCommand}"
+                CommandParameter="{x:Reference t1}"
+                AutomationId="table1"/>
+            <Button WidthRequest="100"
+                HeightRequest="100"
+                Background="LightGray"
+                Margin="2"
+                x:Name="t2"
+                Command="{Binding ChooseTableCommand}"
+                CommandParameter="{x:Reference t2}"
+                AutomationId="table2"/>
+            <Button WidthRequest="100"
+                HeightRequest="100"
+                Background="LightGray"
+                Margin="2"
+                x:Name="t3"
+                Command="{Binding ChooseTableCommand}"
+                CommandParameter="{x:Reference t3}"
+                AutomationId="table3"/>
+            <Button WidthRequest="100"
+                HeightRequest="100"
+                Background="LightGray"
+                Margin="2"
+                x:Name="t4"
+                Command="{Binding ChooseTableCommand}"
+                CommandParameter="{x:Reference t4}"
+                AutomationId="table4"/>
+        </StackLayout>
+
+        <StackLayout Margin="0, 20, 0 ,0"
+                     HorizontalOptions="CenterAndExpand"
+                     IsVisible="{Binding ReservationLayoutVisible}">
+            <Entry Placeholder="Imie rezerwujacego"
+                   Text="{Binding BookerName}" />
+            <Label Text="Godzina rezerwacji: "
+                   Margin="0, 15, 0, 0"/>
+            <Picker ItemsSource="{Binding Hours}"
+                    WidthRequest="200"
+                    SelectedItem="{Binding SelectedDate}"/>
+            <Button Text="Rezerwuj stolik"
+                    Command="{Binding TableReservationComand}"/>
+            <Label Text="{Binding Test}"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz.MainPage"
+             xmlns:local="clr-namespace:Quiz.VievModels">
+    <ContentPage.BindingContext>
+        <local:QuizVievModel/>
+    </ContentPage.BindingContext>
+    
+    <StackLayout>
+        <StackLayout>
+            <Label Text="{Binding QuestionLabel}"
+                   Background="brown"
+                   Margin="15"
+                   Padding="50, 15"
+                   FontSize="25"
+                   HeightRequest="150"/>
+        </StackLayout>
+        <StackLayout
+            Background="brown"
+            Margin="15"
+            HeightRequest="350"
+            Padding="50, 15">
+            <RadioButton Content="{Binding Answer1Label}"
+                         FontSize="25"
+                         IsChecked="{Binding Answer1RadioButton}"/>
+            <RadioButton Content="{Binding Answer2Label}"
+                         FontSize="25"
+                         IsChecked="{Binding Answer2RadioButton}"/>
+            <RadioButton Content="{Binding Answer3Label}"
+                         FontSize="25"
+                         IsChecked="{Binding Answer3RadioButton}"/>
+            <RadioButton Content="{Binding Answer4Label}"
+                         FontSize="25"
+                         IsChecked="{Binding Answer4RadioButton}"/>
+        </StackLayout>
+        <Label Text="{Binding Result}"
+               Margin="50, 0"
+               FontSize="25"
+               TextColor="{Binding ResultColor}"/>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="CenterAndExpand">
+            <Button Text="Wcześniejsze pytanie"
+                    Command="{Binding PreviousQuestionCommand}"/>
+            <Button Text="Następne pytanie"
+                    Command="{Binding NextQusetionCommand}"/>
+            <Button Text="Sprawdź odpowiedź"
+                    Command="{Binding SelectAnswerCommand}"/>
+            <Button Text="Od nowa"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
